@@ -13,16 +13,16 @@ export const Card: FC<Props> = ({ user }) => {
     <li className={s.feature}>
       <h4 className={s.username}>{username}</h4>
       <p className={s.pair}>
-        <div>name:</div> {name.firstname} {name.lastname}
+        name: {name.firstname} {name.lastname}
       </p>
       <p className={s.pair}>
-        <div>phone:</div>
+        phone:
         <a className={s.phone} href={`tel:+${phone}`}>
           +{phone}
         </a>
       </p>
       <p className={s.pair}>
-        <div>email:</div>
+        email:
         <a className={s.email} href={`mailto:${email}`}>
           {email}
         </a>

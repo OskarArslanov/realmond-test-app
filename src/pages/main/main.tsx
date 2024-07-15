@@ -19,6 +19,7 @@ export const Main = () => {
           ))}
         </ul>
       )}
+      {!isLoading && !users.length && <p>No users found</p>}
     </div>
   );
 };

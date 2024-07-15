@@ -26,10 +26,11 @@ export const useMain = () => {
     }
 
     const matchingUsers = users.filter((user) => {
-      const matchFirstName = user.name.firstname.includes(search);
-      const matchLastName = user.name.lastname.includes(search);
-      const matchPhone = user.phone.includes(search);
-      const matchEmail = user.email.includes(search);
+      const lowCaseSearch = search.toLowerCase();
+      const matchFirstName = user.name.firstname.toLowerCase().includes(lowCaseSearch);
+      const matchLastName = user.name.lastname.toLowerCase().includes(lowCaseSearch);
+      const matchPhone = user.phone.includes(lowCaseSearch);
+      const matchEmail = user.email.toLowerCase().includes(lowCaseSearch);
 
       return matchEmail || matchFirstName || matchLastName || matchPhone;
     });
