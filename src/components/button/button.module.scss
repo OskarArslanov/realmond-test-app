@@ -1,0 +1,39 @@
+.component {
+  outline: none;
+  border: none;
+  margin: 0;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  &:focus-visible {
+    outline: 3px solid blue;
+  }
+
+  &:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+  }
+
+  &:active {
+    border-color: gray;
+  }
+
+  &.sm {
+    font-size: 12px;
+    padding: 4px;
+    height: 20px;
+  }
+
+  &.md {
+    font-size: 14px;
+    padding: 6px;
+    height: 28px;
+  }
+
+  &.lg {
+    font-size: 16px;
+    padding: 8px;
+    height: 36px;
+  }
+}

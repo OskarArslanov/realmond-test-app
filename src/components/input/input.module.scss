@@ -1,0 +1,30 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .input {
+    border: 1px solid gray;
+    outline: unset;
+    border-radius: 4px;
+
+    &:focus-visible {
+      outline: 3px solid blue;
+    }
+
+    &.sm {
+      padding: 4px;
+      height: 20px;
+    }
+
+    &.md {
+      padding: 6px;
+      height: 28px;
+    }
+
+    &.lg {
+      padding: 8px;
+      height: 36px;
+    }
+  }
+}

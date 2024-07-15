@@ -1,0 +1,21 @@
+@use '../../index.scss' as mixins;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+
+  .title {
+    margin-top: 100px;
+  }
+
+  .users {
+    @include mixins.resetUlStyle;
+    margin-top: 20px;
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
