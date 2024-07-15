@@ -19,7 +19,6 @@ export const useMain = () => {
   }, []);
 
   const handleSearch = useCallback(() => {
-    console.log(search);
     if (!search) {
       setFilteredUsers(users);
       return;
